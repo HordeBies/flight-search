@@ -10,7 +10,7 @@ function Search() {
     return (
         <div>
             <div className="row mt-4 mx-5">
-                <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div className="col-sm-12 col-md-4 col-lg-3 mb-4">
                     <SearchForm
                         setTickets={setTickets}
                         setError={setError}
@@ -18,7 +18,7 @@ function Search() {
                         loading={loading}
                     />
                 </div>
-                <div className="col-sm-6 col-md-8 col-lg-9">
+                <div className="col-sm-12 col-md-8 col-lg-9">
                     {loading && (
                         <div className="d-flex justify-content-center">
                             <div className="spinner-border text-primary" role="status">

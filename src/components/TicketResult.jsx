@@ -34,7 +34,7 @@ function TicketResult({tickets}){
             </div>
             <div className="card-body row">
                 {tickets?.departure && (
-                    <div className="col">
+                    <div className="col-sm-12 col-md-12 col-lg-6">
                         <TicketTable
                             label="Departing Flights"
                             data={tickets.departure}
@@ -44,7 +44,7 @@ function TicketResult({tickets}){
                     </div>
                 )}
                 {tickets?.return && (
-                    <div className="col">
+                    <div className="col-sm-12 col-md-12 col-lg-6">
                         <TicketTable
                             label="Return Flights"
                             data={tickets.return}
