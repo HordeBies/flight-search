@@ -1,7 +1,6 @@
 import TicketCard from "./TicketCard.jsx";
 
-function Result({label, date, data, sortBy}) {
-
+function TicketTable({label, date, data, sortBy}) {
     const compareAsTime = (a, b) => {
         const aTime = a.split(":");
         const bTime = b.split(":");
@@ -48,9 +47,8 @@ function Result({label, date, data, sortBy}) {
                     />
                 </div>
             ))}
-
         </div>
     )
 }
 
-export default Result;
+export default TicketTable;
